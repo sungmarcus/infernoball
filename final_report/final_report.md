@@ -265,8 +265,7 @@ The scripts are divided between the individual practical scripts and the group p
 - The practicals were fun as I learnt many new things (scripting, working with command line, hash cracking)
 - The written assignments were good in terms of learning new topics as they made you read papers
 - The written assignments format (only one page) I felt was perfect as it did made you get straight to the point of what you learnt 
-- The competition element of the practicals were a good motivator
-- 
+- The competition element of the practicals were a good motivator 
 
 ### Dislike
 
