@@ -1,0 +1,6 @@
+sed 's/^\(.\{80\}\).*$/\1/' file - truncating lines
+awk '!seen[$0]++' file - getting rid of duplicates
+sed 's/^...//'  - deletes first number of chars depending on dots
+sed -i '/^.\{4\}./d' engdic_4.txt - filters words greater than 4 letters
+sed -i -r  '/^.{,3}$/d' engdic_4.txt - filters words lessthan 3 letters
+split -l 1000000 rockyou.txt rockyou_ - split file into a number of other files
