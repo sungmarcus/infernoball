@@ -1,0 +1,254 @@
+\begin{frame}{CS7NS1/CS4400 Module Final Report}
+\protect\hypertarget{cs7ns1cs4400-module-final-report}{}
+
+\begin{itemize}
+\tightlist
+\item
+  Student name: Marcus Sung
+\item
+  Student number: 14335274
+\item
+  Date:
+\end{itemize}
+
+\begin{block}{InfernoBall team self-evaluation}
+
+\begin{itemize}
+\tightlist
+\item
+  Team number: 11
+\item
+  Team members:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Marcus Sung
+  \item
+    John Aitling
+  \item
+    Xuming Xiu
+  \item
+    Sahir Sharma
+  \end{itemize}
+\item
+  Insert team member names/initials in column headers of table below
+\item
+  Effort must be high/medium/low/zero
+\item
+  Effectiveness must be high/medium/low/zero
+\end{itemize}
+
+Use zero if someone really didn't participate at all. Include your
+evaluation of yourself as well as other team members. Be honest.
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+& Marcus & John & Xuming & Sahir\tabularnewline
+\midrule
+\endhead
+effort & high & medium & low & low\tabularnewline
+effectiveness & high & low & low & low\tabularnewline
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\end{block}
+
+\begin{block}{What I learned (1-2 pages)}
+
+I learned various things from going to lectures (normal and guest) and
+doing the written assignments, and the practicals.
+
+\begin{block}{Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  What I learn about Scalable Computing (general):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Things to look out for in scalable computing: Scalability,
+    adaptability, dispersibility, accessibility, affordability, and
+    reliability.
+  \item
+    This helped when reading the papers for the written assignments.
+  \end{itemize}
+\item
+  What I learnt about Internet of Things:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    IoT and its structure.
+  \item
+    IoT nodes and their constraints (low resources, low computing power,
+    low memory etc)
+  \item
+    Architectures of IoT systems.
+  \item
+    Applications and the benefits and challenges.
+  \item
+    Industry 4.0
+  \end{itemize}
+\item
+  What I learnt about processing units:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The differences between CPUs and GPUs.
+  \item
+    The cases in which each one is good for.
+  \item
+    Advantages and disadvantages of them.
+  \item
+    CPU and GPU orientated programming (OpenCL).
+  \item
+    OpenCL specific programming approach.
+  \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Assignments}
+
+This is what I learnt doing the written assignments:
+
+\begin{itemize}
+\tightlist
+\item
+  Assignment 1 (Scalable Computing):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Application of IoT in personal healthcare:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      RFID technology
+    \item
+      Environmentally passive sensors and body centric sensors
+    \item
+      Privacy, safety and reliability concerns
+    \end{itemize}
+  \item
+    Smart Cities:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Architecture
+    \item
+      Features (possible)
+    \item
+      Technology involved in realising the concept (Already done in
+      Padova)\\
+    \end{itemize}
+  \end{itemize}
+\item
+  Assignment 2 (CPU and GPU):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Language based approach
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Parallelism and reliability integrated into a language (MISO)
+    \item
+      Benefits of language based approach for low powered computing
+    \end{itemize}
+  \item
+    Energy efficiency in clustered many-cores:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Programmable tightly-coupled clusters of processors.
+    \item
+      Pros and cons of using it.
+    \item
+      Applications.
+    \end{itemize}
+  \end{itemize}
+\item
+  Assignment 3 (Cloud/Edge or Fog Computing):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Mobile edge computing:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      How MEC works and the architecture.
+    \item
+      Pros and cons of using MEC.
+    \item
+      Limitations on research in particular security.
+    \end{itemize}
+  \item
+    Fog Computing and IoT applications:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Security and privacy not researched enough.
+    \item
+      Advantages of using fog computing.
+    \item
+      Limitations of fog computing.
+    \item
+      Architecture of fog computing.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Practicals}
+
+\begin{itemize}
+\tightlist
+\item
+  Practical 1:
+
+  \begin{itemize}
+  \item
+  \end{itemize}
+\end{itemize}
+
+\newpage
+
+\end{block}
+
+\end{block}
+
+\begin{block}{What I did (2-4 pages)}
+
+Describe what you did during the module, i.e., how you solved the
+practicals. Include URLs for code/repos but not the code itself. If you
+have more text than fits in 4 pages, include a link to that additional
+text but do make the 4 pages self-contained (other than code).
+
+\newpage
+
+\end{block}
+
+\begin{block}{Module evaluation (1 page)}
+
+Say what you liked/disliked about the module and why. There's no need to
+say that RosettaHub is creaky, we know that:-)
+
+\end{block}
+
+\end{frame}
