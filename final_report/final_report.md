@@ -68,7 +68,7 @@ I learned various things from going to lectures (normal and guest) and doing the
  - How to prevent them
 
 ### Assignments
-hashcat
+
 This is what I learnt doing the written assignments:
 
 - Assignment 1 (Scalable Computing):	
@@ -143,12 +143,6 @@ Doing the practicals I learnt the following things.
 \newpage
 ## What I did (2-4 pages) 
 
-Describe what you did during the module, i.e., how you 
-solved the practicals. Include URLs for code/repos but 
-not the code itself. If you have more text than fits
-in 4 pages, include a link to that additional text but
-do make the 4 pages self-contained (other than code).
-
 ### Lectures, written assignments and class test
 
 I went to the lectures (normal and guest) and took notes in each one. I would use these notes to look out for key concepts needed for the written assignments when reading the papers provided. Using these notes and written assignments I made a cheat sheet for the class test. I also revised the papers I read and some of the others. Some of us created a google drive where we shared all of our written assignments so we could revise for the test using them for revision. I also attended the guest lecture on developing a OpenCl program and participated in it.
@@ -167,7 +161,7 @@ The following sections contain the steps I undertook to complete the practical a
 - Ran the script and downloaded the output via scp onto my local machine
 - Submitted it to submitty
 
-### Practical 2
+#### Practical 2
 
 - Looked up various methods of John The Ripper
 - Set it up locally to test rather before attempting to use it on the instance
@@ -178,7 +172,7 @@ The following sections contain the steps I undertook to complete the practical a
 - Decided to try RockYou word list as the first attempt with Jumbo Rules set from JTR and cracked all the passwords locally quite quickly
 - Realised Jumbo Rules had slowed it down and would have cracked it faster using without rules
 
-### Practical 3
+#### Practical 3
 
 - Set up a GPU instance (followed instructions github) and got hashcat compiled
 - Created an image of this instance so as not to have to replicate the steps again
@@ -190,7 +184,7 @@ The following sections contain the steps I undertook to complete the practical a
 - Knowing this des was used to test for the different types of passwords
 - Rockyou was tested on des and cracked the first few fairly quickly
 - While trying to find out the other password types rockyou dictionary attack was performed on the next fastest and so on to make sure there was always something being cracked and reduce overall time
-- Bruteforcing and testing various different dictionarys revealed that 5 letter words appeared quite often
+- Bruteforcing and testing various different dictionaries revealed that 5 letter words appeared quite often
 - Bruteforcing 5 letter words was then tried and a further pattern found that it was lowercase only
 - Knowing this a mask attack was able to be performed
 - After cracking more passwords of the 5 letter lowercase another pattern was revealed to show that there would be at least one vowel contained in the words
@@ -221,12 +215,66 @@ The following sections contain the steps I undertook to complete the practical a
 - There was a lot of trial and error in finding the best methods to crack the passwords
 - One method attempted was to run JTR on more than 16 computers cracking argon by splitting up the wordlists between them
 - This did not provide a significant increase in speed for any password type
+- It was found that Google Cloud provided a significantly more powerful GPU instance so this was used for the majority of the slower hashes
+- Various scripts were used to automate task and will be listed in the last section
+
+#### Group project
+
+- The assignment was read and the infernoball was downloaded from the e-mail
+- The first task was to check how the layout of the infernoball looked
+- For the most part it was JSON 
+- After the code that was used to create the infernoball was analysed
+- A script was created to split the JSON file into the separate files ( shares, hashes and cipher)
+- It was found that there was various hash types again (sha1, sha512, pbkdf and argon)
+- These were once again split into separate files by the hash type
+- Rockyou was used to test the fastest hash and was found to be the password type for the first layer
+- Again the next fastest was then tested and so on
+- Whilst some of the passwords were cracking the code used to generate the infernoball was looked at again to try and change the code to decrypt the next layer
+- The secret was generated using a script
+- The decrypt script was made and the next layer could be decrypted if given the correct secret
+- Upon decrypting the next layer it could be split into the same files but an extra one was found which gave a clue to the password type of that layer
+- A group meeting was then held and the scripts were shared amongst the others
+- We sat together to figure out the next layer and found it to be the compound words from the previous assignment
+- We then decided the best way to crack faster was to split the hashes amongst one another and crack them and make sure to upload any passwords cracked to test them for the secret
+- After this meeting there was no other group meeting
+- I ended up figuring out the majority of the layer clues with help from one other team mate on 1 or 2 levels and cracked the majority of the passwords alone
+- I did all the decryption of each layer and submitted them all
+- At each layer the clues were took a while to figure out but after figuring them out it was pretty straightforward in cracking the passwords
+- Google Cloud was used for the majority of the passwords due to the faster speeds with AWS being used for argon as there was instances with higher number of CPU cores
+- The same methods that were used in the previous assignment were used here
+
+#### Scripts
+
+The scripts are divided between the individual practical scripts and the group project scripts.
+
+##### Individual
+- Link to repo containing all the scripts: <https://github.com/sungmarcus/scalable-computing/tree/master/scripts>
+- Link to description of what each script does: <https://github.com/sungmarcus/scalable-computing/tree/master/final_report/scripts_desc.md>
+
+##### Group
+- Link to repo containing all the scripts: <https://github.com/sungmarcus/scalable-computing/tree/master/inferno_ball/scripts>
+- Link to description of what each script does: <https://github.com/sungmarcus/scalable-computing/tree/master/final_report/scripts_desc.md>
+
 \newpage
 ## Module evaluation (1 page)
 
-Say what you liked/disliked about the module and why.
-There's no need to say that RosettaHub is creaky, we
-know that:-)
+### Like
 
+- The topics were interesting
+- Guest lectures were good and a nice change of pace to normal lectures
+- The practicals were fun as I learnt many new things (scripting, working with command line, hash cracking)
+- The written assignments were good in terms of learning new topics as they made you read papers
+- The written assignments format (only one page) I felt was perfect as it did made you get straight to the point of what you learnt 
+- The competition element of the practicals were a good motivator
+- 
 
+### Dislike
 
+- The time spent on the practicals was too much
+- The competition was good but perhaps bonus points for the first one to complete was not the right idea as this meant pushing aside all other module work and devoting a lot of time initially to get the early lead
+- The lack of notes made it difficult to revise or catch up on material you may have missed
+- Scalable computing could have been more clearly explained or approached at the start as it took a while for me to understand the scalability aspects in some of the material and practicals
+- The AWS intances were good up to a certain point but then everyone found google cloud 
+- There should be more explanation on the best way to solve the practicals so people who may not have done so well could learn something and the people who did well could have also seen if their method was correct
+- People took up all the computers in the labs cracking as they did not seem to know how to run the programs in the background on the instances or were just too cheap and didn't want to spend their credits
+- The above meant I had limited access to computers I needed for a certain module (even though it was said that its okay to log them out it, there was still the case of people complaining to you if you did log them out, so people may not have been as inclined to log someone out)
